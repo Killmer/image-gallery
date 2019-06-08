@@ -42,7 +42,7 @@ const input = document.getElementsByName('query')[0];
 input.addEventListener('change', (e) => {
   const {value} = e.target;
 
-  fetchImages(value, {per_page: 200})
+  fetchImages(value, {per_page: 200}) 
     .then((data) => {
       renderImages(data);
     })
